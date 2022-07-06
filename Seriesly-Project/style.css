@@ -1,0 +1,134 @@
+body{
+    background-color: black;
+    font-family: "Lato", sans-serif;
+    color: rgb(128, 128, 103);
+}
+#logo{
+    background: linear-gradient(to right, rgba(17, 17, 17, 0), rgba(17, 17, 17, 0));
+
+}
+h2{ 
+ 
+  font-style:bold;
+  font-family: "Lato",'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:rgb(255, 255, 255);
+  }
+#logo img{
+  
+    height: 150px;
+   background-color: transparent;
+     
+}
+.forfloat{
+    width: 1200px;
+    margin:auto;
+    }
+    .sola-kaydir{
+    float:left;
+    padding:0 10px 10px 0;
+    }
+#container{
+    width: 1000px;
+    height: 800px;
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+#logo{
+    
+   font-size: 60px;
+   color: #555;
+    margin-left: 50px;
+}
+#container ul{
+    margin-right: 50px;
+    margin-top: 30px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#container li{
+    display: inline-block;
+}
+#container img{
+opacity: 1;
+transition: all 0.4s;
+transform: scale(1);
+}
+#container img:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    margin-top:50px;
+    padding: 0;
+    width: 180px;
+    background-color: black;
+    position: absolute;
+    top:50px;
+    left:0px;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    opacity: 1;
+    transition: all 0.4s;
+    border-radius: 10px;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #555;
+    color: black;
+  }
+  .sidebar a:hover{
+    opacity: 0.7;
+    transform:translate(15px,0px);
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: black;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 600px;
+    width: 200px;
+    
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: 600px;
+      position:relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
